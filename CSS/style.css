@@ -1,0 +1,77 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+}
+body{
+    min-height: 100vh;
+    background-image: url('../imgs/pexels-gochrisgoxyz-1477166.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+}
+.container{
+    text-align: center;
+    height:100%;
+}
+.container .cards .big-card{
+    float:left;
+    padding: 0 65px;
+}
+.card{
+    position: relative;
+}
+.image-layer{
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 51px;
+    opacity: 0;
+    transition: all 1s ease-in;
+}
+.image-box:hover img{
+    transform: scale(1.2);
+}
+.image-layer:hover{
+    opacity: 1;
+}
+.image-layer h2{
+    font-size: 35px;
+    margin: 280px auto 40px;
+}
+.image-layer p{
+    line-height: 1.5;
+}
+.clear-fix{
+    clear: both;
+}
+.pricelist{
+    font-size: 20px;
+}
+.price50{
+    color: gray;
+    text-decoration: line-through;
+}
+.pricelist div{
+    float: left;
+}
+.pricelist div{
+    padding: 20px 95px;
+}
+button{
+    font-size: 18px;
+    background-color: #0A5EB0;
+    color: white;
+    padding: 20px 40px;
+    border-radius: 30px;
+    border: 0;
+    transition: all 0.8s ease-in;
+}
+button:hover{
+    cursor: pointer;
+    background-color: #379777;
+}
